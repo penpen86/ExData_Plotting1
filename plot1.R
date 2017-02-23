@@ -19,8 +19,8 @@ if(!file.exists("household_power_consumption.txt")){
 }
 
 # The third step is to get the full data from the .txt file taking in consideration
-# that we need to convert the Date column in a date variable and the Time variable 
-# in a time variable
+# that we need to convert the Date column in a date variable and the Time column 
+# in a time variable using the paste and strptime functions
 
 fulldata <- read.csv("./dataProject1Exploratory/household_power_consumption.txt", 
                      header = T, sep = ';', na.strings = '?', stringsAsFactors = F)
